@@ -23,3 +23,8 @@ This is a repository to gain familiarity with git and Github.
 * git push
 
 We also saw how to create a new Github repository, as well as how to use nano to make changes to a file using a built-in text editor.
+
+### Branching 
+* git branch: will show all available branches
+* git branch: which shows all the branches you have available
+* git checkout -b 'branch2': which both creates a branch as well as moves you onto it

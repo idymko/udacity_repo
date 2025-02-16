@@ -10,7 +10,6 @@ This is a repository to gain familiarity with git and Github.
 * git push 
 * git status
 * rm -rf repository-name
-* new changes 
 
 ### Git commands used in udacity solution:
 

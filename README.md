@@ -9,18 +9,17 @@ Configuring user information used across all local repositories
 * git config --global color.ui auto: set automatic command line coloring for Git for easy reviewing
 
 ## Basic git commands
-* ls
+* ls: get all files in current directory
 * git clone url_to_github_repository: clone your repository to your local machine.
 * git status
 * git add project_one.py
 * git commit -m ‘add project_one.py file’ 
 * git push 
 * git status
-* rm -rf repository-name
+* rm -rf repository-name: remove a directory via terminal 
 
 ## Branching 
 * git branch: will show all available branches
-* git branch: which shows all the branches you have available
 * git checkout -b develop: You want to both create a new branch called develop and move to it.
 * git push --set-upstream origin develop: You make changes to your develop branch. You add and commit your changes. Now you would like your branch to be available on your remote repository (on Github).
 * git branch -d develop: Consider you have opened a pull request and it has been reviewed and merged into master. You now would like to remove the local version of the branch.

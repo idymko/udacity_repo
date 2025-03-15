@@ -1,5 +1,14 @@
 # udacity_repo
 This is a repository to gain familiarity with git and Github.
+path: cd python/MLDevOps/udacity_repo
+
+## clean code
+Run in terminal: 
+    ipython simple_clean_code.py    
+Calculate pylint score: 
+    pylint simple_clean_code.py
+Perform autocleaning with autopep8: 
+    autopep8 --in-place --aggressive --aggressive simple_clean_code.py
 
 # Git Setup
 Configuring user information used across all local repositories

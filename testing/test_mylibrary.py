@@ -18,6 +18,7 @@ Fixture - The test function test_import_data() will
 use the return of path() as an argument
 """
 @pytest.fixture(scope="module", params=["sample_file1.txt", "sample_file2.txt"])
+# https://docs.pytest.org/en/7.1.x/how-to/fixtures.html
 def path(request):
     value = request.param
     return value

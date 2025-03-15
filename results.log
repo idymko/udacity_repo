@@ -1,0 +1,3 @@
+root - ERROR - ERROR: We were not able to find file 'some_path'
+root - ERROR - ERROR: denominator cannot be zero
+root - ERROR - ERROR: text argument must be a string

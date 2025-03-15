@@ -1,0 +1,3 @@
+2025-03-15 17:37:26 - root - ERROR - Variable 'no' if of type <class 'str'> and 'way' is of type <class 'str'>
+2025-03-15 17:37:26 - root - INFO - SUCCESS: Both variables '4' and '5' are ints
+2025-03-15 17:37:26 - root - ERROR - Variable '4' if of type <class 'int'> and '5.0' is of type <class 'float'>

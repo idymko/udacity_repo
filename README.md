@@ -2,7 +2,7 @@
 This is a repository to gain familiarity with git and Github.
 path: cd python/MLDevOps/udacity_repo
 
-## clean code
+# Clean code
 Run in terminal: 
     ipython simple_clean_code.py    
 Calculate pylint score: 
@@ -49,3 +49,33 @@ Use pytest module for testing
 * Define unit test functions that start with test_ inside the test file.
 * Enter pytest into your terminal in the directory of your test file 
 and it detects these tests for you.
+* Links: 
+** https://docs.python-guide.org/writing/tests/
+** https://docs.pytest.org/en/7.1.x/how-to/fixtures.html
+
+# Logging 
+Standard file for logging: 
+import logging 
+logging.basicConfig(
+    filename='./results.log',
+    level=logging.INFO,
+    filemode='w',
+    format='%(name)s - %(levelname)s - %(message)s'   
+)
+
+Examples: 
+* logging.info("SUCCESS: There are {} rows in your dataframe".format(df.shape))
+* logging.error("ERROR: We were not able to find file '%s'", file_path)
+* logging.warning("WARNING: We were not able to find file '%s'", file_path)
+
+## Adding a file handler
+file_handler = logging.FileHandler('app.log')
+file_handler.setLevel(logging.ERROR)
+file_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
+
+## Attach the handler to the logger
+logger = logging.getLogger()
+logger.addHandler(file_handler)
+
+## Log an error message
+logging.error("An error occurred. Check app.log for details.")

@@ -9,7 +9,14 @@ Perform autocleaning with autopep8:
 """
 
 import pandas as pd
+import logging 
 
+logging.basicConfig(
+    filename='./results.log',
+    level=logging.INFO,
+    filemode='w',
+    format='%(name)s - %(levelname)s - %(message)s'   
+)
 
 def read_data(file_path):
     """
@@ -24,16 +31,19 @@ def read_data(file_path):
     """
     try:
         dataframe = pd.read_csv(file_path)
+        logging.info("SUCCESS: There are {} rows in your dataframe".format(df.shape))
+        logging.info("SUCCESS: Your file was successfully read in.")
         return dataframe
     except FileNotFoundError:
-        print("We were not able to find that file")
+        logging.error("ERROR: We were not able to find file '%s'", file_path)
+        # logging.warning("WARNING: We were not able to find that file %s", file_path)
 
 
 def enter_int_number():
     try:
         result = int(input("Enter an integer: "))
     except ValueError:
-        print("Invalid input. Please enter a valid integer.")
+        logging.error("ERROR: Invalid input. Please enter a valid integer.")
     else:
         print("You entered:", result)
 
@@ -50,7 +60,7 @@ def open_file(file_path):
         file = open(file_path, "r")
         content = file.read()
     except FileNotFoundError:
-        print("File not found.")
+        logging.error("ERROR: File not found.")
     else:
         print("File content:", content)
     finally:
@@ -74,7 +84,7 @@ def divide_vals(numerator, denominator):
         fraction_val = numerator / denominator
         return fraction_val
     except ZeroDivisionError:
-        return "denominator cannot be zero"
+        logging.error("ERROR: denominator cannot be zero")
 
 
 def num_words(text):
@@ -91,11 +101,12 @@ def num_words(text):
         n_words = len(text.split(" "))
         return n_words
     except AttributeError:
-        return "text argument must be a string"
+        logging.error("ERROR: text argument must be a string")
 
 
 if __name__ == "__main__":
-    # df = read_data("some_path")
+    
+    df = read_data("some_path")
     # enter_int_number()
     # open_file("example.txt")
     print("Successful function run:")

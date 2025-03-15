@@ -1,0 +1,7 @@
+2025-03-15 17:56:19 - root - ERROR - Denominator is 0 or numerator/denominator is not float.
+2025-03-15 17:56:19 - root - INFO - SUCESS: Denominator is not 0. Numerator and denominator are floats.
+2025-03-15 17:56:19 - root - INFO - SUCESS: Denominator is not 0. Numerator and denominator are floats.
+2025-03-15 17:56:19 - root - ERROR - Denominator is 0 or numerator/denominator is not float.
+2025-03-15 17:56:19 - root - ERROR - Text argument must be a string.
+2025-03-15 17:56:19 - root - INFO - SUCCESS: Text is string.
+2025-03-15 17:56:19 - root - INFO - SUCCESS: Text is string.

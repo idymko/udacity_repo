@@ -31,7 +31,7 @@ Configuring user information used across all local repositories
 * git branch: will show all available branches
 * git checkout -b develop: You want to both create a new branch called develop and move to it.
 * git push --set-upstream origin develop: You make changes to your develop branch. You add and commit your changes. Now you would like your branch to be available on your remote repository (on Github).
-* git checkout: used to move across branches that have already been created
+* git checkout branch_name: used to move across branches that have already been created
 * git branch -d develop: Consider you have opened a pull request and it has been reviewed and merged into master. You now would like to remove the local version of the branch.
 
 ## Git log

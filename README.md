@@ -1,7 +1,16 @@
 # udacity_repo
 This is a repository to gain familiarity with git and Github.
+path: cd python/MLDevOps/udacity_repo
 
-## Git Setup
+## clean code
+Run in terminal: 
+    ipython simple_clean_code.py    
+Calculate pylint score: 
+    pylint simple_clean_code.py
+Perform autocleaning with autopep8: 
+    autopep8 --in-place --aggressive --aggressive simple_clean_code.py
+
+# Git Setup
 Configuring user information used across all local repositories
 * git commit -m “[descriptive message]”: commit your staged content as a new commit snapshot
 * git config --global user.name “[firstname lastname]”: set a name that is identifiable for credit when review version history
@@ -31,3 +40,12 @@ Configuring user information used across all local repositories
 * git checkout develop: switch to develop branch
 * git merge --no-ff friend_groups: Merge the friend_groups branch into the develop branch
 * git push origin develop: Push your changes to the remote repository
+
+# Testing
+
+Use pytest module for testing
+* pip install -U pytest: To install pytest
+* Create a test file starting with test_.
+* Define unit test functions that start with test_ inside the test file.
+* Enter pytest into your terminal in the directory of your test file 
+and it detects these tests for you.

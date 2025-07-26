@@ -43,7 +43,7 @@ def sum_vals(var1, var2):
             "SUCCESS: Both variables '%s' and '%s' are ints",
             var1, var2)
         return result
-
+    
     except AssertionError:
         logging.error(
             "Variable '%s' if of type %s and '%s' is of type %s",

@@ -1,6 +1,7 @@
 # udacity_repo
 This is a repository to gain familiarity with git and Github.
 path: cd python/MLDevOps/udacity_repo
+venv: conda activate udacity
 
 # Clean code
 Run in terminal: 

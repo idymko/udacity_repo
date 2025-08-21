@@ -39,6 +39,7 @@ for monat in range(1, 30*12):
         break
     
 df = pd.DataFrame(daten)
+zinsensumme = df['Zinsen (€)'].sum().round(0)
+print(f"zinsensumme\t {zinsensumme}")
+print(f"zinsen+neben\t {zinsensumme+nebenkosten}")
 print(df)
-
-print(f"\nzinsensumme\t {df['Zinsen (€)'].sum().round(0)}")
